@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>bamazon</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>-789409212408429940</string>
+			<key>name</key>
+			<string>127.0.0.1</string>
+			<key>port</key>
+			<integer>8889</integer>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClJpZNIeHy0uXxAPTlNN
+			dXRhYmxlU3RyaW5noy0vI1hOU1N0cmluZ9IeHzEyXk5TTXV0YWJs
+			ZUFycmF5ozEzI1dOU0FycmF50h4fIjWiIiNfEA9OU0tleWVkQXJj
+			aGl2ZXLRODlUZGF0YYABAAgAEQAaACMALQAyADcARQBLAFIAWgBl
+			AGwAcAByAHQAdgB6AHwAfgCAAIIAhwCMAJEAugDBAMIAwwDFAMoA
+			1QDeAPQA+AEFAQ4BEwEVARcBGQEeASgBKgEtATIBRAFIAVEBVgFl
+			AWkBcQF2AXkBiwGOAZMAAAAAAAACAQAAAAAAAAA6AAAAAAAAAAAA
+			AAAAAAABlQ==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {1231, 851}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>-- Drops the animals_db if it exists currently --
+DROP DATABASE IF EXISTS bamazon;
+-- Creates the "animals_db" database --
+CREATE DATABASE bamazon;
+
+-- Makes it so all of the following code will affect animals_db --
+USE bamazon;
+
+-- Creates the table "people" within animals_db --
+CREATE TABLE products (
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  product VARCHAR(30) NOT NULL,
+  department VARCHAR(30) NOT NULL,
+  price INTEGER(10) NOT NULL,
+  stock INTEGER(10) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+-- Creates new rows containing data in all named columns --
+INSERT INTO products (product, department, price, stock)
+VALUES ("frame", "bicycle", 300.00, 20);
+
+INSERT INTO products (product, department, price, stock)
+VALUES ("wheel", "bicycle", 70.00, 80);
+
+INSERT INTO products (product, department, price, stock)
+VALUES ("handlebars", "bicycle", 50.00, 40);
+
+INSERT INTO products (product, department, price, stock)
+VALUES ("crank set", "bicycle", 150.00, 20);
+
+INSERT INTO products (product, department, price, stock)
+VALUES ("brake set", "bicycle", 200.00, 30);
+
+INSERT INTO products (product, department, price, stock)
+VALUES ("pedal", "bicycle", 20.00, 100);
+
+INSERT INTO products (product, department, price, stock)
+VALUES ("saddle", "bicycle", 40.00, 40);
+
+INSERT INTO products (product, department, price, stock)
+VALUES ("helmet", "clothing", 70.00, 40);
+
+INSERT INTO products (product, department, price, stock)
+VALUES ("shoes", "clothing", 200.00, 100);
+
+INSERT INTO products (product, department, price, stock)
+VALUES ("jersey", "clothing", 80.00, 30);
+
+INSERT INTO products (product, department, price, stock)
+VALUES ("shorts", "clothing", 50.00, 70);</string>
+			<key>table</key>
+			<string>products</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>-- Drops the animals_db if it exists currently --
+DROP DATABASE IF EXISTS bamazon;
+-- Creates the "animals_db" database --
+CREATE DATABASE bamazon;
+-- Makes it so all of the following code will affect animals_db --
+USE bamazon;
+-- Creates the table "people" within animals_db --
+CREATE TABLE products (
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  product VARCHAR(30) NOT NULL,
+  department VARCHAR(30) NOT NULL,
+  price INTEGER(10) NOT NULL,
+  stock INTEGER(10) NOT NULL,
+  PRIMARY KEY (id)
+);
+-- Creates new rows containing data in all named columns --
+INSERT INTO products (product, department, price, stock)
+VALUES ("frame", "bicycle", 300.00, 20);
+INSERT INTO products (product, department, price, stock)
+VALUES ("wheel", "bicycle", 70.00, 80);
+INSERT INTO products (product, department, price, stock)
+VALUES ("handlebars", "bicycle", 50.00, 40);
+INSERT INTO products (product, department, price, stock)
+VALUES ("crank set", "bicycle", 150.00, 20);
+INSERT INTO products (product, department, price, stock)
+VALUES ("brake set", "bicycle", 200.00, 30);
+INSERT INTO products (product, department, price, stock)
+VALUES ("pedal", "bicycle", 20.00, 100);
+INSERT INTO products (product, department, price, stock)
+VALUES ("saddle", "bicycle", 40.00, 40);
+INSERT INTO products (product, department, price, stock)
+VALUES ("helmet", "clothing", 70.00, 40);
+INSERT INTO products (product, department, price, stock)
+VALUES ("shoes", "clothing", 200.00, 100);
+INSERT INTO products (product, department, price, stock)
+VALUES ("jersey", "clothing", 80.00, 30);
+INSERT INTO products (product, department, price, stock)
+VALUES ("shorts", "clothing", 50.00, 70)</string>
+		<string>-- Drops the animals_db if it exists currently --
+DROP DATABASE IF EXISTS bamazon;
+-- Creates the "animals_db" database --
+CREATE DATABASE bamazon;
+-- Makes it so all of the following code will affect animals_db --
+USE bamazon;
+-- Creates the table "people" within animals_db --
+CREATE TABLE products (
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  product VARCHAR(30) NOT NULL,
+  department VARCHAR(30) NOT NULL,
+  price INTEGER(10) NOT NULL,
+  stock INTEGER(10) NOT NULL,
+  PRIMARY KEY (id)
+);
+-- Creates new rows containing data in all named columns --
+INSERT INTO products (product, department, price, stock)
+VALUES ("frame", "bicycle", 300.00, 20)</string>
+		<string>-- Drops the animals_db if it exists currently --
+DROP DATABASE IF EXISTS bamazon;
+-- Creates the "animals_db" database --
+CREATE DATABASE bamazon;
+-- Makes it so all of the following code will affect animals_db --
+USE bamazon;
+-- Creates the table "people" within animals_db --
+CREATE TABLE products (
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  product VARCHAR(30) NOT NULL,
+  department VARCHAR(30) NOT NULL,
+  price INTEGER(10) NOT NULL,
+  stock INTEGER(10) NOT NULL,
+  PRIMARY KEY (item_id)
+)</string>
+		<string>CREATE TABLE products</string>
+		<string>DROP TABLE customers</string>
+		<string>CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255)</string>
+		<string>CREATE DATABASE mydb</string>
+		<string>DROP DATABASE mydb</string>
+		<string>CREATE DATABASE mydb;
+CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255)</string>
+		<string>CREATE DATABASE mydb 
+
+CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255)</string>
+		<string>DROP TABLE mydb</string>
+		<string>CREATE TABLE top_albums (
+  position INT NOT NULL,
+  artist VARCHAR(100) NULL,
+  album VARCHAR(100) NULL,
+  year INT NULL,
+  raw_total DECIMAL(10,4) NULL,
+  raw_usa DECIMAL(10,4) NULL,
+  raw_uk DECIMAL(10,4) NULL,
+  raw_eur DECIMAL(10,4) NULL,
+  raw_row DECIMAL(10,4) NULL,
+  PRIMARY KEY (position)
+)</string>
+		<string>SELECT * FROM top5000 WHERE artist="Madonna"</string>
+		<string>SELECT * FROM top5000 WHERE artist="The Beatles"</string>
+		<string>SELECT * FROM top5000</string>
+		<string>SELECT artist FROM top5000 WHERE raw_total BETWEEN 20 AND 30</string>
+		<string>SELECT artist, COUNT(*) count FROM top5000 GROUP BY artist Having COUNT(*) &gt; 1 ORDER BY count DESC</string>
+		<string>SELECT artist, COUNT(*) count FROM top5000 GROUP BY song Having COUNT(*) &gt; 1 ORDER BY count DESC</string>
+		<string>SELECT artist, count FROM top5000 GROUP BY song Having COUNT(*) &gt; 1 ORDER BY count DESC</string>
+		<string>SELECT artist, COUNT(*) count FROM top5000 GROUP BY song Having COUNT(*) &gt; 1 ORDER BY count</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.6.35</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
